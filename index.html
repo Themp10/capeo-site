@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CAPEO, spécialiste de l'économie d'énergie et des énergies renouvelables. Découvrez nos solutions solaires pour votre transition énergétique.">
+  <meta name="theme-color" content="#e17a2d">
+  <title>CAPEO - Cabinet de Performance Énergétique | Solutions Solaires</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="12" fill="currentColor"/>
+            <path d="M20 2V8M20 32V38M2 20H8M32 20H38M6.34 6.34L10.58 10.58M29.42 29.42L33.66 33.66M6.34 33.66L10.58 29.42M29.42 10.58L33.66 6.34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">CAPEO</span>
+          <span class="logo-tagline">Cabinet de Performance Énergétique</span>
+        </div>
+      </a>
+      
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#accueil" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-trigger">
+              CAPEO
+              <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#about">Qui sommes-nous</a></li>
+              <li><a href="#about">Notre équipe</a></li>
+              <li><a href="#advantages">Nos engagements</a></li>
+              <li><a href="#advantages">Respect de l'environnement</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-trigger">
+              L'Offre Solea
+              <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#about">Description de l’Offre</a></li>
+              <li><a href="#about">Préconisation</a></li>
+              <li><a href="#about">Production</a></li>
+              <li><a href="#about">Stockage</a></li>
+              <li><a href="#about">Les Panneaux</a></li>
+              <li><a href="#about">L’onduleur</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="#solea" class="nav-link">L'Offre Solea</a></li> -->
+          <li><a href="#advantages" class="nav-link">Les intérêts pour vous</a></li>
+          <li><a href="#testimonials" class="nav-link">Pourquoi nous</a></li>
+          <li><a href="#solea" class="nav-link">Simulateur en ligne</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <a href="#contact" class="btn btn-primary header-cta">Demander un devis</a>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg">
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-gradient"></div>
+      <div class="sun-rays"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge animate-on-scroll">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+          </svg>
+          + de 20 ans d'expérience
+        </span>
+        
+        <h1 class="hero-title animate-on-scroll">
+          Votre <span class="text-gradient">Transition Énergétique</span> Commence Ici
+        </h1>
+        
+        <p class="hero-description animate-on-scroll">
+          Avec CAPEO, passez à l'autoconsommation solaire et réduisez votre facture d'électricité jusqu'à 70%. 
+          Une solution clé en main, sans batterie physique grâce à notre technologie de batterie virtuelle.
+        </p>
+        
+        <div class="hero-buttons animate-on-scroll">
+          <a href="#contact" class="btn btn-primary btn-large">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+            </svg>
+            Simuler mes économies
+          </a>
+          <a href="#solea" class="btn btn-outline btn-large">
+            Découvrir l'offre Solea
+          </a>
+        </div>
+        
+        <div class="hero-stats animate-on-scroll">
+          <div class="stat">
+            <span class="stat-value" data-count="15000">0</span>
+            <span class="stat-label">Installations réalisées</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-count="70" data-suffix="%">0%</span>
+            <span class="stat-label">D'économies moyennes</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-count="98" data-suffix="%">0%</span>
+            <span class="stat-label">Clients satisfaits</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual animate-on-scroll">
+        <div class="solar-house">
+          <div class="house-shape">
+            <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- House base -->
+              <rect x="50" y="120" width="200" height="130" fill="#1a1a2e" rx="4"/>
+              <!-- Roof -->
+              <path d="M30 120 L150 30 L270 120 Z" fill="#2d2d44"/>
+              <!-- Solar panels on roof -->
+              <rect x="70" y="65" width="60" height="40" fill="url(#solarGradient)" rx="2" class="solar-panel"/>
+              <rect x="140" y="55" width="60" height="40" fill="url(#solarGradient)" rx="2" class="solar-panel"/>
+              <!-- Panel lines -->
+              <line x1="100" y1="65" x2="100" y2="105" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+              <line x1="70" y1="85" x2="130" y2="85" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+              <line x1="170" y1="55" x2="170" y2="95" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+              <line x1="140" y1="75" x2="200" y2="75" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+              <!-- Windows -->
+              <rect x="80" y="150" width="40" height="50" fill="#fbbf24" opacity="0.6" rx="2"/>
+              <rect x="180" y="150" width="40" height="50" fill="#fbbf24" opacity="0.6" rx="2"/>
+              <!-- Door -->
+              <rect x="130" y="170" width="40" height="80" fill="#3d3d5c" rx="2"/>
+              <!-- Gradients -->
+              <defs>
+                <linearGradient id="solarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#1e40af"/>
+                  <stop offset="100%" style="stop-color:#3b82f6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          
+          <div class="sun-visual">
+            <div class="sun-core"></div>
+            <div class="sun-glow"></div>
+          </div>
+          
+          <div class="energy-flow">
+            <div class="energy-particle"></div>
+            <div class="energy-particle"></div>
+            <div class="energy-particle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Découvrir</span>
+      <div class="scroll-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <section class="brands" id="brands">  
+    <div class="container scroller">
+      <div class="brands-logos animate-on-scroll scroller__inner">
+        <img src="assets/acquisition.png" alt="LONGi" class="brand-logo">
+        <img src="assets/budget.png" alt="Fronius" class="brand-logo">
+        <img src="assets/chatbot.png" alt="Fronius" class="brand-logo">
+        <img src="assets/delete.png" alt="Fronius" class="brand-logo">
+        <img src="assets/excel.png" alt="Fronius" class="brand-logo">
+        <img src="assets/glpi.png" alt="Fronius" class="brand-logo">
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header animate-on-scroll">
+        <span class="section-badge">Qui sommes-nous</span>
+        <h2 class="section-title">
+          Un acteur majeur de la <span class="text-gradient">transition énergétique</span>
+        </h2>
+        <p class="section-description">
+          Depuis plus de 20 ans, CAPEO accompagne les particuliers dans leur démarche d'économie d'énergie 
+          et de respect de l'environnement. Notre expertise et nos partenariats de qualité nous permettent 
+          de vous proposer les meilleures solutions du marché.
+        </p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3>+ de 20 ans d'expertise</h3>
+          <p>Une expérience solide dans le domaine de l'efficacité énergétique et des énergies renouvelables.</p>
+        </div>
+        
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Partenaire LONGi</h3>
+          <p>Nous travaillons avec LONGi, le leader mondial des panneaux solaires, pour vous garantir la meilleure qualité.</p>
+        </div>
+        
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3>Engagement qualité</h3>
+          <p>Une installation soignée, un suivi personnalisé et un service après-vente réactif.</p>
+        </div>
+      </div>
+      
+      <div class="objectives animate-on-scroll">
+        <h3 class="objectives-title">Nos 3 objectifs</h3>
+        <div class="objectives-list">
+          <div class="objective">
+            <div class="objective-number">01</div>
+            <div class="objective-content">
+              <h4>Réduire votre facture</h4>
+              <p>Jusqu'à 70% d'économies sur votre facture d'électricité grâce à l'autoconsommation.</p>
+            </div>
+          </div>
+          <div class="objective">
+            <div class="objective-number">02</div>
+            <div class="objective-content">
+              <h4>Gagner en indépendance</h4>
+              <p>Produisez votre propre électricité et réduisez votre dépendance au réseau.</p>
+            </div>
+          </div>
+          <div class="objective">
+            <div class="objective-number">03</div>
+            <div class="objective-content">
+              <h4>Protéger la planète</h4>
+              <p>Contribuez à la transition énergétique avec une énergie propre et renouvelable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solea Section -->
+  <section class="solea" id="solea">
+    <div class="container">
+      <div class="solea-header animate-on-scroll">
+        <span class="section-badge">Notre Solution</span>
+        <h2 class="section-title">
+          Découvrez <span class="text-gradient">L'Offre SOLEA</span>
+        </h2>
+        <p class="section-description">
+          Une solution d'autoconsommation solaire complète et innovante, incluant la technologie 
+          de batterie virtuelle pour maximiser vos économies sans contraintes.
+        </p>
+      </div>
+      
+      <div class="solea-features">
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M12 7V3M7 7V5M17 7V5"/>
+            </svg>
+          </div>
+          <h3>Panneaux LONGi</h3>
+          <p>Les meilleurs panneaux du marché avec une garantie de 25 ans et un rendement optimal.</p>
+          <span class="feature-badge">N°1 Mondial</span>
+        </div>
+        
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <h3>Micro-onduleurs</h3>
+          <p>Technologie de pointe pour une production optimisée même en cas d'ombrage partiel.</p>
+          <span class="feature-badge">Performance</span>
+        </div>
+        
+        <div class="feature-card featured animate-on-scroll">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="16" height="10" rx="2"/>
+              <path d="M22 11h-2M6 11h8"/>
+            </svg>
+          </div>
+          <h3>Batterie Virtuelle</h3>
+          <p>Stockez votre surplus d'énergie sans batterie physique. Récupérez-la quand vous en avez besoin.</p>
+          <span class="feature-badge">Innovation</span>
+        </div>
+        
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Installation complète</h3>
+          <p>Pose, raccordement et mise en service par nos équipes certifiées.</p>
+          <span class="feature-badge">Clé en main</span>
+        </div>
+        
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+            </svg>
+          </div>
+          <h3>Suivi en ligne</h3>
+          <p>Application mobile pour suivre votre production et consommation en temps réel.</p>
+          <span class="feature-badge">Connecté</span>
+        </div>
+        
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Garanties étendues</h3>
+          <p>25 ans sur les panneaux, 20 ans sur les micro-onduleurs, 10 ans sur l'installation.</p>
+          <span class="feature-badge">Sérénité</span>
+        </div>
+      </div>
+      
+      <div class="solea-process animate-on-scroll">
+        <h3 class="process-title">Comment ça marche ?</h3>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h4>Étude personnalisée</h4>
+            <p>Analyse de votre consommation et dimensionnement optimal de votre installation.</p>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h4>Installation</h4>
+            <p>Pose et mise en service par nos équipes certifiées en quelques jours.</p>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h4>Économies</h4>
+            <p>Profitez immédiatement de votre production solaire et réduisez vos factures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="advantages-header animate-on-scroll">
+        <span class="section-badge">Pourquoi nous choisir</span>
+        <h2 class="section-title">
+          Les avantages <span class="text-gradient">CAPEO</span>
+        </h2>
+      </div>
+      
+      <div class="advantages-grid">
+        <div class="advantage-card animate-on-scroll">
+          <div class="advantage-icon green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+          <h3>Énergie propre</h3>
+          <p>Produisez une électricité 100% verte et réduisez votre empreinte carbone.</p>
+        </div>
+        
+        <div class="advantage-card animate-on-scroll">
+          <div class="advantage-icon orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+            </svg>
+          </div>
+          <h3>Économies garanties</h3>
+          <p>Jusqu'à 70% d'économies sur votre facture d'électricité dès la première année.</p>
+        </div>
+        
+        <div class="advantage-card animate-on-scroll">
+          <div class="advantage-icon blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="16" height="10" rx="2"/>
+              <path d="M22 11h-2M6 11h8"/>
+            </svg>
+          </div>
+          <h3>Batterie virtuelle</h3>
+          <p>Stockez votre surplus sans contrainte ni coût de batterie physique.</p>
+        </div>
+        
+        <div class="advantage-card animate-on-scroll">
+          <div class="advantage-icon purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Garanties longues</h3>
+          <p>25 ans sur les panneaux, installation assurée et SAV réactif.</p>
+        </div>
+        
+        <div class="advantage-card animate-on-scroll">
+          <div class="advantage-icon teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+            </svg>
+          </div>
+          <h3>Suivi intelligent</h3>
+          <p>Application dédiée pour monitorer votre production en temps réel.</p>
+        </div>
+        
+        <div class="advantage-card animate-on-scroll">
+          <div class="advantage-icon red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3>Accompagnement</h3>
+          <p>Un conseiller dédié vous accompagne de l'étude à la mise en service.</p>
+        </div>
+      </div>
+      
+      <div class="key-service animate-on-scroll">
+        <div class="key-service-content">
+          <div class="key-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+            </svg>
+          </div>
+          <div class="key-text">
+            <h3>Service clé en main</h3>
+            <p>De l'étude de faisabilité aux démarches administratives, nous gérons tout pour vous. Vous n'avez qu'à profiter de vos économies.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header animate-on-scroll">
+        <span class="section-badge">Témoignages</span>
+        <h2 class="section-title">
+          Ce que disent <span class="text-gradient">nos clients</span>
+        </h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"Installation impeccable et équipe très professionnelle. Ma facture a baissé de 65% dès le premier mois. Je recommande vivement CAPEO !"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MJ</div>
+            <div class="author-info">
+              <span class="author-name">Marie J.</span>
+              <span class="author-location">Toulouse</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"La batterie virtuelle est une vraie révolution. Plus besoin d'investir dans une batterie physique coûteuse. Merci CAPEO pour cette solution innovante."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PD</div>
+            <div class="author-info">
+              <span class="author-name">Pierre D.</span>
+              <span class="author-location">Bordeaux</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"Équipe sérieuse et à l'écoute. L'installation a été rapide et soignée. L'application de suivi est top pour voir sa production en temps réel."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SL</div>
+            <div class="author-info">
+              <span class="author-name">Sophie L.</span>
+              <span class="author-location">Lyon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="trust-badges animate-on-scroll">
+        <div class="trust-badge">
+          <span class="trust-value">98%</span>
+          <span class="trust-label">Clients satisfaits</span>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-value">15 000+</span>
+          <span class="trust-label">Installations</span>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-value">4.8/5</span>
+          <span class="trust-label">Note moyenne</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-header animate-on-scroll">
+        <span class="section-badge">Contact</span>
+        <h2 class="section-title">
+          Demandez votre <span class="text-gradient">devis gratuit</span>
+        </h2>
+        <p class="section-description">
+          Notre équipe est à votre disposition pour étudier votre projet et vous proposer 
+          une solution adaptée à vos besoins.
+        </p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Téléphone</h4>
+              <p>01 23 45 67 89</p>
+              <span>Lun-Ven 9h-18h</span>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Email</h4>
+              <p>contact@capeo.fr</p>
+              <span>Réponse sous 24h</span>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Adresse</h4>
+              <p>123 Avenue de l'Énergie</p>
+              <span>31000 Toulouse, France</span>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form animate-on-scroll" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Prénom</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Votre prénom">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Nom</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Votre nom">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="votre@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" required placeholder="06 12 34 56 78">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="address">Adresse du projet</label>
+            <input type="text" id="address" name="address" placeholder="Adresse complète">
+          </div>
+          
+          <div class="form-group">
+            <label for="propertyType">Type de propriété</label>
+            <select id="propertyType" name="propertyType">
+              <option value="">Sélectionnez...</option>
+              <option value="house">Maison individuelle</option>
+              <option value="apartment">Appartement</option>
+              <option value="building">Immeuble</option>
+              <option value="commercial">Local commercial</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-large btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            Envoyer ma demande
+          </button>
+          
+          <p class="form-note">
+            En soumettant ce formulaire, vous acceptez d'être contacté par nos équipes. 
+            Vos données sont protégées conformément à notre politique de confidentialité.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="12" fill="currentColor"/>
+                <path d="M20 2V8M20 32V38M2 20H8M32 20H38M6.34 6.34L10.58 10.58M29.42 29.42L33.66 33.66M6.34 33.66L10.58 29.42M29.42 10.58L33.66 6.34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">CAPEO</span>
+              <span class="logo-tagline">Cabinet de Performance Énergétique</span>
+            </div>
+          </a>
+          <p class="footer-description">
+            Votre partenaire pour une transition énergétique réussie. 
+            Plus de 20 ans d'expertise au service de votre confort et de vos économies.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#about">Qui sommes-nous</a></li>
+            <li><a href="#solea">L'Offre Solea</a></li>
+            <li><a href="#advantages">Avantages</a></li>
+            <li><a href="#testimonials">Témoignages</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Installation solaire</a></li>
+            <li><a href="#">Batterie virtuelle</a></li>
+            <li><a href="#">Étude personnalisée</a></li>
+            <li><a href="#">Suivi de production</a></li>
+            <li><a href="#">Maintenance</a></li>
+            <li><a href="#">SAV</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 CAPEO - Cabinet de Performance Énergétique. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
