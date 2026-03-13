@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: var(--transition);
 }
 
-.header.scrolled {
+.scrolled {
   background: rgba(253, 252, 250, 0);
   box-shadow: var(--shadow);
 }
@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-icon {
-  width: 40px;
+  width: 140px;
   height: 40px;
   color: var(--primary);
 }
@@ -401,6 +401,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid var(--border);
   box-shadow: var(--shadow-lg);
   padding: 16px;
+  animation: all 1s ease;
 }
 
 .nav.mobile-active .nav-list {
@@ -444,10 +445,14 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   z-index: -1;
+  background-image: url('assets/bg1.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-gradient {
   position: absolute;
+  backdrop-filter: blur(10px);
   inset: 0;
   background: linear-gradient(135deg, 
     rgba(253, 252, 250, 1) 0%, 
@@ -604,9 +609,9 @@ h1, h2, h3, h4, h5, h6 {
 .sun-core {
   position: absolute;
   inset: 20px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  background: linear-gradient(135deg, rgb(255, 227, 66), rgb(255, 193, 78));
   border-radius: 50%;
-  box-shadow: 0 0 40px rgba(225, 122, 45, 0.5);
+  box-shadow: 0 0 40px rgba(196, 180, 35, 0.801);
 }
 
 .sun-glow {
@@ -626,6 +631,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100px;
 }
 
+.hero-house{
+  width: 600px;
+}
 .energy-particle {
   position: absolute;
   width: 8px;
