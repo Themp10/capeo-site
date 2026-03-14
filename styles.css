@@ -1149,6 +1149,12 @@ h1, h2, h3, h4, h5, h6 {
 .solea-card:nth-child(1) .solea-card-div{
   position: absolute;
 }
+.solea-card:nth-child(2) .solea-card-div{
+  position: absolute;
+}
+.solea-card:nth-child(3) .solea-card-div{
+  position: absolute;
+}
 .solea-card:nth-child(1){
   background-image: url('assets/solps.png');
 
@@ -1221,6 +1227,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 .solea-card-bottom-row p{
   font-size: 13px;
+}
+.solea-bat{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.solea-bat img{
+  width: 100px;
+}
+.bold-span{
+  font-weight: 800;
+  color: var(--third)
 }
 @media (min-width: 768px) {
   .process-steps {
