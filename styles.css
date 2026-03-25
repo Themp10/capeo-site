@@ -469,41 +469,56 @@ h1, h2, h3, h4, h5, h6 {
 .equipe-parent {
   position: absolute;
   width: 100%;
-  height: 300px;
-  bottom: 100px;
   display: flex;
-  flex-direction: column;
-}
-.equipe-top{
-  width: 100%;
-  height: 150px;
-  display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-.equipe-top img{
+
+.equipe-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.equipe-1 img{
   width: 250px;
+  height: 235px;
   height: auto;
   margin: 0 20px;
 }
-.equipe-bottom{
-  background: var(--primary);
-  width: 100%;
-  height: 150px;
-  display: flex;
+.equipe-1 div{
+ background: var(--primary);
+ width: 250px;
+ height: 150px;
+   display: flex;
   justify-content: space-around;
   align-items: center;
   color: var(--muted);
+  text-align: center;
 }
-.equipe-bottom .equipe-text{
+
+.equipe-text{
   font-size: 18px;
   text-align: center;
   width: 250px;
+  box-shadow: rgb(254, 254, 255) 0px 20px 30px -10px;
+  border-radius: 30% 10% 30% 10%;
 }
-.equipe-bottom .equipe-text:nth-child(2){
-  border-right: #0d9488 solid 2px;
-  border-left: #0d9488 solid 2px;
-
+@media (max-width: 768px) {
+  .equipe-parent{
+    flex-wrap: wrap;
+  }
+.equipe-1 div{
+ width: 160px;
+ height: 90px;
+}
+.equipe-1 img{
+  width: 150px;
+}
+.equipe-text{
+  font-size: 11px;
+}
 }
 /* ========================================
    HERO SECTION
@@ -646,10 +661,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   color: var(--foreground);
   background-color: rgba(110, 110, 110, 0.034);
-  /* border-radius: 8px; */
-  backdrop-filter: blur(10px);
   padding: 5px;
-  border-bottom: 3px solid white;
 }
 
 .hero-visual {
@@ -662,12 +674,12 @@ h1, h2, h3, h4, h5, h6 {
 .solar-house {
   position: relative;
   width: 400px;
-  height: 350px;
+  /* height: 250px; */
 }
 
 .house-shape {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .house-shape svg {
@@ -747,6 +759,20 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--muted);
   font-size: 14px;
   animation: float 2s ease-in-out infinite;
+}
+@media (max-width: 768px) {
+
+  .scroll-indicator{
+    left: 43%;
+  }
+  .solar-house{
+    width: 250px;
+    margin-top: 50px;
+  }
+  .sun-visual {
+  width: 80px;
+  height: 80px;
+}
 }
 
 .scroll-arrow {
@@ -843,7 +869,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-header {
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 10px;
 }
 
 .about-grid {
@@ -1247,12 +1273,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+@media (max-width: 768px) {
+  .solea-content{
+    display: none;
+  }
+
+}
+
+
 .process-step {
   flex: 1;
   max-width: 280px;
   text-align: center;
 }
-
+.process-step img{
+  width: 50px;
+}
 .step-number {
   width: 56px;
   height: 56px;
@@ -1348,7 +1385,9 @@ h1, h2, h3, h4, h5, h6 {
 .advantage-icon.purple { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
 .advantage-icon.teal { background: linear-gradient(135deg, #14b8a6, #0d9488); }
 .advantage-icon.red { background: linear-gradient(135deg, #f43f5e, #e11d48); }
-
+.advantage-icon img{
+  width: 40px;
+}
 .advantage-card h3 {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -1762,3 +1801,5 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
+
+
