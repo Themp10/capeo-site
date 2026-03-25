@@ -68,34 +68,47 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // ---- Scroll Animations (Intersection Observer) ----
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  };
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        
-        // Stagger animations for multiple elements in same section
-        const siblings = entry.target.parentElement.querySelectorAll('.animate-on-scroll');
-        siblings.forEach((sibling, index) => {
-          if (sibling.getBoundingClientRect().top < window.innerHeight) {
-            setTimeout(() => {
-              sibling.classList.add('visible');
-            }, index * 100);
-          }
-        });
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      const el = entry.target;
+
+      // Prevent re-trigger
+      if (el.classList.contains('visible')) return;
+
+      let delay = 0;
+
+      // Detect delay based on class
+      if (el.classList.contains('animate-on-scroll-1')) {
+        delay = 800;
+      } else if (el.classList.contains('animate-on-scroll-2')) {
+        delay = 1600;
       }
-    });
-  }, observerOptions);
-  
-  document.querySelectorAll('.animate-on-scroll').forEach(el => {
-    observer.observe(el);
+
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, delay);
+
+      // Optional: stop observing after animation
+      observer.unobserve(el);
+    }
   });
-  
+}, observerOptions);
+
+// Observe ALL variants
+document.querySelectorAll(
+  '.animate-on-scroll, .animate-on-scroll-1, .animate-on-scroll-2'
+).forEach(el => {
+  observer.observe(el);
+});
+
   // ---- Counter Animation ----
   function animateCounter(element) {
     const target = parseInt(element.getAttribute('data-count'));

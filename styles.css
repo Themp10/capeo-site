@@ -135,12 +135,12 @@ h1, h2, h3, h4, h5, h6 {
 .section-badge {
   display: inline-block;
   padding: 8px 16px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(35, 74, 245, 0.1));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(20, 36, 104, 0.23));
   color: var(--muted);
   font-size: 64px;
   font-weight: 600;
   border-radius: 50px;
-  margin-bottom: 16px;
+  margin: 16px;
 }
 
 .section-title {
@@ -197,13 +197,16 @@ h1, h2, h3, h4, h5, h6 {
   100% { transform: translateY(-100px) translateX(10px)  scale(0.5); opacity: 0; }
 }
 
-.animate-on-scroll {
+.animate-on-scroll,
+.animate-on-scroll-1,
+.animate-on-scroll-2 {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
-.animate-on-scroll.visible {
+.animate-on-scroll.visible,
+.animate-on-scroll-1.visible,
+.animate-on-scroll-2.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -448,8 +451,6 @@ h1, h2, h3, h4, h5, h6 {
 .equipe {
   position: relative;
   min-height: 100vh;
-  align-items: center;
-  padding: 30px 0px;
   overflow: hidden;
 }
 .equipe-bg {
@@ -809,7 +810,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.44) 0%, rgba(73, 72, 71, 0.08) 50%, rgba(0, 0, 0, 0.29) 100% );
-
   flex-direction: column;
 }
 .about-container{
@@ -945,13 +945,30 @@ h1, h2, h3, h4, h5, h6 {
    SOLEA SECTION
    ======================================== */
 .solea {
-  padding: 20px 0;
-  background: var(--muted);
+  position: relative;
+  /* padding: 30px 0px; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.44) 0%, rgba(73, 72, 71, 0.08) 50%, rgba(0, 0, 0, 0.29) 100% );
+  flex-direction: column;
+}
+.solea-container{
+    background-image: url('assets/imgsolea.png');
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 .solea-header {
   text-align: center;
-  margin-bottom: 64px;
 }
 
 .solea-features {
@@ -960,7 +977,11 @@ h1, h2, h3, h4, h5, h6 {
   gap: 24px;
   margin-bottom: 64px;
 }
-
+.solea-home{
+  width: 70%;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  animation: float 2s ease-in-out infinite;
+}
 .feature-card {
   position: relative;
   padding: 32px;
@@ -1294,10 +1315,15 @@ h1, h2, h3, h4, h5, h6 {
 /* ========================================
    ADVANTAGES SECTION
    ======================================== */
-.advantages {
-  padding: 100px 0;
-  background: white;
+.nous-container{
+  background-image: url('assets/whyus.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
+
 
 .advantages-header {
   text-align: center;
@@ -1338,7 +1364,35 @@ h1, h2, h3, h4, h5, h6 {
   height: 28px;
   color: white;
 }
+.nous-features{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+}
+.nous-feature{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 300px;
+}
+.nous-feature img{
+  height: 100px;
+}
 
+.nous-feature p{
+  color: var(--muted);
+}
+.separtor{
+  width: 2px;
+  height: 100px;
+  background: var(--muted);
+}
 .advantage-icon.green { background: linear-gradient(135deg, #22c55e, #16a34a); }
 .advantage-icon.orange { background: linear-gradient(135deg, var(--primary), var(--primary-light)); }
 .advantage-icon.blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
@@ -1410,6 +1464,44 @@ h1, h2, h3, h4, h5, h6 {
 .key-text p {
   opacity: 0.8;
 }
+/* ========================================
+   INTERET SECTION
+   ======================================== */
+.interet-container{
+  background-image: url('assets/interet.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+
+.interet-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.interet-features{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.interet-feature{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+  width: 500px;
+}
+.interet-feature img{
+  height: 100px;
+}
+
 
 /* ========================================
    TESTIMONIALS SECTION
