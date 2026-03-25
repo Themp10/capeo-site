@@ -74,11 +74,12 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 100%;
   margin: 0 auto;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   padding-top: 25px;
+
 }
 
 /* ---- Buttons ---- */
@@ -136,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px 16px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(35, 74, 245, 0.1));
   color: var(--muted);
-  font-size: 32px;
+  font-size: 64px;
   font-weight: 600;
   border-radius: 50px;
   margin-bottom: 16px;
@@ -499,6 +500,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   margin: 0 20px;
 }
+
 .equipe-1 div{
  background: var(--primary);
  width: 250px;
@@ -802,30 +804,29 @@ h1, h2, h3, h4, h5, h6 {
    ======================================== */
 .about {
   position: relative;
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.44) 0%, rgba(73, 72, 71, 0.08) 50%, rgba(0, 0, 0, 0.29) 100% );
+
+  flex-direction: column;
 }
-.about-bg{
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: url('assets/nous.png');
+.about-container{
+    background-image: url('assets/nous.png');
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  width: 100%;
 }
-.about-bg img{
+.about-img-qm{
   position: absolute;
   right: 0;
   top: 150px;
   width: 300px;
 }
-.about-gradient{
-    position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.44) 0%, rgba(73, 72, 71, 0.08) 50%, rgba(0, 0, 0, 0.29) 100% );
-}
+
+
 .about-header {
   text-align: center;
   margin-bottom: 10px;
@@ -894,8 +895,8 @@ h1, h2, h3, h4, h5, h6 {
    background: var(--primary); 
   width: 100%;
   color: white;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   height: 180px;
 }
 @keyframes BGobjectives {
