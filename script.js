@@ -7,15 +7,22 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // ---- Header Scroll Effect ----
   const header = document.getElementById('header');
+  const navLinks = document.querySelectorAll('.nav-link');
   let lastScroll = 0;
   
   window.addEventListener('scroll', function() {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 50) {
+      navLinks.forEach(link => {
+        link.classList.add('white-text');
+      });
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
+      navLinks.forEach(link => {
+        link.classList.remove('white-text');
+      });
     }
     
     lastScroll = currentScroll;
@@ -74,12 +81,14 @@ const observerOptions = {
   threshold: 0.1
 };
 
+
+
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
 
       const el = entry.target;
-
       // Prevent re-trigger
       if (el.classList.contains('visible')) return;
 
@@ -104,7 +113,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe ALL variants
 document.querySelectorAll(
-  '.animate-on-scroll, .animate-on-scroll-1, .animate-on-scroll-2'
+  '.animate-on-scroll, .animate-on-scroll-1, .animate-on-scroll-2, .reveal, .animate, .delay-1, .delay-2'
 ).forEach(el => {
   observer.observe(el);
 });
@@ -258,7 +267,7 @@ document.querySelectorAll(
         document.querySelectorAll('.nav-link').forEach(link => {
           link.style.color = '';
         });
-        navLink.style.color = 'var(--primary)';
+        navLink.style.color = 'var(--third)';
       }
     });
   }
@@ -360,4 +369,14 @@ function addAnimation() {
   });
 }
 
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 

@@ -50,8 +50,8 @@
               <li><a href="#about">Préconisation</a></li>
               <li><a href="#about">Production</a></li>
               <li><a href="#about">Stockage</a></li>
-              <li><a href="#about">Les Panneaux</a></li>
-              <li><a href="#about">L’onduleur</a></li>
+              <li><a href="#panel">Les Panneaux</a></li>
+              <li><a href="#onduleur">L’onduleur</a></li>
             </ul>
           </li>
           <!-- <li><a href="#solea" class="nav-link">L'Offre Solea</a></li> -->
@@ -70,130 +70,70 @@
         <span></span>
       </button>
     </div>
+        <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
   </header>
+  <h1 id="mainTitle" class="title fixed">La Production</h1>
+  <section class="panel parallax"  id="panel">
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-header animate-on-scroll">
-        <span class="section-badge">Contact</span>
-        <h2 class="section-title">
-          Demandez votre <span class="text-gradient">devis gratuit</span>
-        </h2>
-        <p class="section-description">
-          Notre équipe est à votre disposition pour étudier votre projet et vous proposer 
-          une solution adaptée à vos besoins.
+    <div class="overlay"></div>
+    
+    <div class="sp-content">
+
+      <div class="text-block animate delay-1">
+        <h2>Les Panneaux :</h2>
+        <p>
+          Afin de vous garantir une sécurité de Production et un rendement optimum, CAPEO a opté
+          pour des panneaux à la pointe de l’innovation et au 1er rang mondial :
         </p>
+
+        <ul>
+          <li>Trina Solar classé n°1 mondial par Wood Mackenzie en 2025</li>
+          <li>Top Performer Kiwa PVEL pendant plus de 10 ans</li>
+          <li>Distinction « Overall Highest Achiever » par le RETC</li>
+          <li>Notation AAA garantissant la fiabilité financière des projets</li>
+        </ul>
       </div>
-      
-      <div class="contact-grid">
-        <div class="contact-info animate-on-scroll">
-          <div class="info-card">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-              </svg>
-            </div>
-            <div class="info-content">
-              <h4>Téléphone</h4>
-              <p>01 23 45 67 89</p>
-              <span>Lun-Ven 9h-18h</span>
-            </div>
-          </div>
-          
-          <div class="info-card">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-            <div class="info-content">
-              <h4>Email</h4>
-              <p>contact@capeo.fr</p>
-              <span>Réponse sous 24h</span>
-            </div>
-          </div>
-          
-          <div class="info-card">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <div class="info-content">
-              <h4>Adresse</h4>
-              <p>123 Avenue de l'Énergie</p>
-              <span>31000 Toulouse, France</span>
-            </div>
-          </div>
-        </div>
-        
-        <form class="contact-form animate-on-scroll" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="firstName">Prénom</label>
-              <input type="text" id="firstName" name="firstName" required placeholder="Votre prénom">
-            </div>
-            <div class="form-group">
-              <label for="lastName">Nom</label>
-              <input type="text" id="lastName" name="lastName" required placeholder="Votre nom">
-            </div>
-          </div>
-          
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="votre@email.com">
-            </div>
-            <div class="form-group">
-              <label for="phone">Téléphone</label>
-              <input type="tel" id="phone" name="phone" required placeholder="06 12 34 56 78">
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="address">Adresse du projet</label>
-            <input type="text" id="address" name="address" placeholder="Adresse complète">
-          </div>
-          
-          <div class="form-group">
-            <label for="propertyType">Type de propriété</label>
-            <select id="propertyType" name="propertyType">
-              <option value="">Sélectionnez...</option>
-              <option value="house">Maison individuelle</option>
-              <option value="apartment">Appartement</option>
-              <option value="building">Immeuble</option>
-              <option value="commercial">Local commercial</option>
-            </select>
-          </div>
-          
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet..."></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-primary btn-large btn-full">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-              <line x1="22" y1="2" x2="11" y2="13"/>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-            </svg>
-            Envoyer ma demande
-          </button>
-          
-          <p class="form-note">
-            En soumettant ce formulaire, vous acceptez d'être contacté par nos équipes. 
-            Vos données sont protégées conformément à notre politique de confidentialité.
-          </p>
-        </form>
+
+      <div class="image-card animate delay-2">
+        <img src="../assets/solps.png" alt="panneaux">
       </div>
     </div>
+
   </section>
 
+  <section class="onduleur parallax"  id="onduleur">
+
+  <div class="overlay"></div>
+
+  <div class="sp-content">
+
+    <div class="text-block animate">
+      <h2>Les Onduleurs :</h2>
+      <p>
+        CAPEO a fait le choix des micro-onduleurs APsystems pour optimiser votre installation :
+      </p>
+
+      <ul>
+        <li>Production optimisée panneau par panneau (+5% à +25%)</li>
+        <li>Fiabilité accrue sans point de défaillance unique</li>
+        <li>Modularité pour ajouter facilement des équipements</li>
+        <li>Monitoring en temps réel de votre production</li>
+        <li>Sécurité électrique renforcée dès le toit</li>
+      </ul>
+    </div>
+
+    <div class="image-card animate delay-1">
+      <img src="../assets/solmo.png" alt="onduleurs">
+    </div>
+
+  </div>
+
+</section>
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="logo">
@@ -263,6 +203,6 @@
     </div>
   </footer>
 
-  <!-- <script src="script.js"></script> -->
+  <script src="../pages.js"></script>
 </body>
 </html>

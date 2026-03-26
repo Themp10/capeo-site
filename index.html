@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="assets/favicon.ico" type="image/png">
   <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
-                
 </head>
 <body>
   <!-- Header -->
@@ -58,8 +57,8 @@
             </ul>
           </li>
           <!-- <li><a href="#solea" class="nav-link">L'Offre Solea</a></li> -->
-          <li><a href="#advantages" class="nav-link">Les intérêts pour vous</a></li>
           <li><a href="#advantages" class="nav-link">Pourquoi nous</a></li>
+          <li><a href="#interet" class="nav-link">Les intérêts pour vous</a></li>
           <li><a href="#solea" class="nav-link">Simulateur en ligne</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -73,11 +72,14 @@
         <span></span>
       </button>
     </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" id="accueil">
-    <div class="hero-bg">
+  <section class="hero reveal" id="accueil">
+    <div class="hero-bg parallax">
       <div class="hero-particles" id="particles"></div>
       <div class="hero-gradient"></div>
       <div class="sun-rays"></div>
@@ -151,10 +153,10 @@
   <section class="about" id="about">
 
     <img class="about-img-qm"src="assets/qm.png" alt="">
-    <div class="about-container">
+    <div class="about-container parallax">
       <div class="about-header animate-on-scroll">
         <span class="section-badge">Qui sommes-nous</span>
-        <p class="section-description">
+        <p class="section-description reveal">
           <span class="bolder">CAPEO</span> est <span class="bolder">le spécialiste de l'Economie d'Energie</span> Intervenant pricipalement dans la promotion des <span class="bolder">Energies renouvelables</span> et, plus particulièrement, dans la mise en oeuvre de la <span class="bolder">Transition Energétique</span> pour les particuliers. <span class="bolder">Notre Savoir-faire</span> permet de vous accompagner tout au long de vos projets, de l'audit énergétique à la réalisation des travaux.
         </p>
       </div>
@@ -183,7 +185,7 @@
 <!-- Nos équipes Section -->
  
   <section class="equipe" id="equipe">
-    <div class="equipe-bg">
+    <div class="equipe-bg parallax">
       <div class="equipe-gradient"></div>
     </div>
     <div class="about-header animate-on-scroll">
@@ -192,7 +194,9 @@
           CAPEO est <span class="text-gradient">le spécialiste de l'Economie d'Energie</span>
         </h2>
         <p class="section-description">
-          Text de presentation des équipes.
+          Les dirigeants de Capeo ont été les pionniers dans le développement des Énergies
+Renouvelables avec la création de plusieurs agences dans toutes la France depuis plus d’un
+quart de siècle.
         </p>
     </div>
         <div class="equipe-parent">
@@ -216,7 +220,7 @@
   
   <!-- Solea Section -->
   <section class="solea" id="solea">
-    <div class="solea-container">
+    <div class="solea-container parallax">
       <div class="solea-header animate-on-scroll">
         <span class="section-badge">L'offre SOLEA</span>
         <h2 class="section-title">
@@ -276,7 +280,7 @@
 
   <!-- Nous choisir -->
   <section class="advantages" id="advantages">
-    <div class="nous-container">
+    <div class="nous-container parallax">
       <div class="advantages-header animate-on-scroll">
         <span class="section-badge">Pourquoi nous choisir</span>
       </div>
@@ -300,7 +304,7 @@
     </div>
   </section>
   <section class="interet" id="interet">
-    <div class="interet-container">
+    <div class="interet-container parallax">
       <div class="interet-header animate-on-scroll">
         <span class="section-badge">Les intérêts pour vous</span>
       </div>
@@ -421,7 +425,7 @@
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
-    <div class="container">
+    <div class="contact-container">
       <div class="contact-header animate-on-scroll">
         <span class="section-badge">Contact</span>
         <h2 class="section-title">
@@ -537,10 +541,10 @@
       </div>
     </div>
   </section>
-
+<iframe id="RevoltSimulatorIframe" src="https://simulateur.revolt.eco?token=4fqZRcFUsQS4R9-k" width="1100px" height="800px"></iframe>
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="logo">
@@ -593,7 +597,7 @@
           </ul>
         </div>
         
-        <div class="footer-links">
+        <div class="footer-links" style="display: none;">
           <h4>Légal</h4>
           <ul>
             <li><a href="#">Mentions légales</a></li>
@@ -611,5 +615,9 @@
   </footer>
 
   <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </body>
 </html>
