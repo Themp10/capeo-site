@@ -58,13 +58,3 @@ document.querySelectorAll(
   observer.observe(el);
 });
 
-window.addEventListener('scroll', () => {
-  const trigger = section2.offsetTop;
-  const scroll = window.scrollY;
-
-  const progress = Math.min(Math.max((scroll - trigger + 300) / 400, 0), 1);
-
-  title.style.left = (progress * 0) + 'px';
-  title.style.right = ((1 - progress) * 0) + 'px';
-  title.style.transform = `translateX(${(1 - progress) * 200}px)`;
-});
