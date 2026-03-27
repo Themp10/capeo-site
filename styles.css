@@ -21,6 +21,7 @@
   --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
   --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
   --transition: all 0.3s ease;
+  --nav-height: 0px;
 }
 
 /* ---- Reset & Base ---- */
@@ -2072,5 +2073,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  scroll-margin-top: 80px; /* adjust to your navbar height */
+  scroll-margin-top: 80px;
+}main {
+  margin-top: var(--nav-height);
+}
+
+main section {
+  scroll-margin-top: var(--nav-height);
+}
+.section-badge-page{
+  display: inline-block;
+  color: white;
+  background-color:   var(--primary);
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 800;
+  width: 100%;
+  letter-spacing: 5px;
+}
+.stockage-img{
+filter: drop-shadow(5px 5px 10px rgba(255, 250, 250, 0.5));
+width: 600px;
 }
